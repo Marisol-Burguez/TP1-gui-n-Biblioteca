@@ -1,0 +1,5 @@
+USE Biblioteca;
+-- Índices adicionales para búsquedas frecuentes (PK y FK ya pueden tener índices implícitos).
+CREATE INDEX IDX_LIBROS_ANIO ON LIBROS(ANIO);
+CREATE INDEX IDX_PRESTAMO_FECHA ON PRESTAMO(FECHA_P);
+CREATE INDEX IDX_AUTORES_APELLIDOS ON AUTORES(APELLIDOS);

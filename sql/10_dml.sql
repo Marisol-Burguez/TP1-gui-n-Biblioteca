@@ -1,0 +1,6 @@
+USE Biblioteca;
+-- Sección 3. Ejecutar después de 02_inserts.sql. Estos cambios son deliberados.
+INSERT INTO ESTUDIANTES(RUT_EST,NOMBRES,APELLIDOS,EDAD,FONO,DIRECCION,ID_CARRERA) VALUES('EST007','Valentina','Castro',24,'777','Centro 70',1);
+UPDATE FUNCIONARIOS SET SALUD='Excelente' WHERE EDAD>50;
+DELETE FROM LIBROS WHERE COD_LIBRO=107; -- libro sin préstamos
+UPDATE LIBROS SET ID_EDIT=2 WHERE COD_LIBRO=106;
